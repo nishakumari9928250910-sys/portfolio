@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nisha — Personal Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Nisha</h1>
+
+      <p class="tagline">Web Developer & Designer</p>
+
+    </header>
+
+    <main>
+      <section id="about" class="card" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I am a Computer Science student passionate about programming, web development, and problem-solving. 
+        I enjoy exploring new technologies, learning practical skills, and turning ideas into creative digital projects. 
+        I am continuously working to strengthen my programming fundamentals and improve my ability to build useful, user-friendly applications.
+        </p>
+        
+      </section>
+
+      <section id="skills" class="card" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skills-list">
+          <li>C++</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Problem Solving</li>
+          <li>Communication Skills</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <label class="project-search-label" for="projectSearch">Search by project name or technology</label>
+          <input type="search" id="projectSearch" placeholder="Try Python, Quiz, Book, JavaScript..." autocomplete="off" />
+          <p id="projectSearchStatus" class="search-status" role="status" aria-live="polite">Showing all 5 projects.</p>
+        <h2 id="projects-heading">Projects</h2>
+        <ul class="project-list">
+  
+          <li class="project-card">
+            <h3>Python Programs Collection</h3>
+            <p>
+              A collection of Python programs demonstrating basic programming
+              concepts and data conversion.
+            </p>
+            <p><strong>Technologies:</strong> Python</p>
+  
+            <ul>
+              <li>
+                <a href="https://github.com/nishakumari9928250910-sys/Python1_25bcon1918" target="_blank" rel="noopener noreferrer">
+                  Factorial Calculator
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/nishakumari9928250910-sys/Python2_25bcon1918" target="_blank" rel="noopener noreferrer">
+                  Fibonacci Sequence Generator
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://github.com/nishakumari9928250910-sys/Python3_25bcon1918" target="_blank" rel="noopener noreferrer">
+                  Structure-to-Dictionary Conversion
+                </a>
+              </li>
+            </ul>
+          </li>
+  
+          <li class="project-card">
+            <h3>Messy Python Code Improvement</h3>
+            <p>
+              A messy Python script improved with AI assistance for better code readability and organization.
+            </p>
+            <a href="https://github.com/nishakumari9928250910-sys/mess-python-code" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </li>
+  
+          <li class="project-card">
+            <h3>Bug Fixing Using Cursor AI</h3>
+            <p>A buggy Python program examined and corrected using Cursor AI assistance.</p>
+            <p><strong>Technologies:</strong> Python, Cursor AI</p>
+            <a href="https://github.com/nishakumari9928250910-sys/nisha_25bcon1918"target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </li>
+  
+          <li class="project-card">
+            <h3>Interactive Quiz Application</h3>
+            <p>An interactive quiz that checks answers and displays the user's score.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/nishakumari9928250910-sys/quiz" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <br />
+            <a href="https://quiz-phi-hazel-88.vercel.app/" target="_blank" rel="noopener noreferrer">Live quiz</a>
+          </li>
+  
+          <li class="project-card">
+            <h3>Book Reading List Application</h3>
+            <p>A reading list app for adding books, changing reading status, filtering books, deleting entries, and
+              viewing book counts.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/nishakumari9928250910-sys/reading-list-app" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <br />
+            <a href="https://reading-list-app-jet.vercel.app/" target="_blank" rel="noopener noreferrer">Reading List</a>
+      </section>
+    </main>
+    <section id="weather">
+      <h2>Weather</h2>
+  
+      <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter a city"
+      >
+  
+      <button id="weatherButton">
+          Get Weather
+      </button>
+  
+      <div id="weatherResult">
+          Enter a city to see the weather.
+      </div>
+  </section>
+    <section id="aiChatSection" class="ai-chat">
+      <h2>Ask My AI Assistant</h2>
+    
+      <p>
+        Ask questions about this portfolio,
+        projects, and technologies.
+      </p>
+    
+      <div
+        id="chatMessages"
+        aria-live="polite"
+      ></div>
+    
+      <div class="chat-controls">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask a question..."
+        />
+    
+        <button id="sendButton" type="button">
+          Send
+        </button>
+      </div>
+    
+      <p id="chatStatus" role="status"></p>
+    
+      <p class="chat-note">
+        AI chat is available during the local
+        classroom demonstration only.
+      </p>
+    </section>
+    <footer class="site-footer">
+      <p>Nisha Kumari
+        Thankyou for visiting my portfolio!
+        Feel free to connect with me.
+        <br>
+        <a href="https://github.com/nishakumari9928250910-sys">GitHub</a>
+      </p>
+    </footer>
+    <button id="themeToggle">Switch to Dark Mode</button>
+    <script src="config.js"></script>
+<script src="chatbot.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
